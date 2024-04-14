@@ -1,0 +1,141 @@
+body {
+  background-color: #19398f;
+}
+
+#head-container {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+#task-box {
+  outline: none;
+  color: white;
+  text-align: left;
+  font-size: 1.5rem;
+  width: 450px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  background-color: rgba(161, 129, 129, 0.5);
+  border: none;
+}
+
+#task-box::placeholder {
+  text-align: left;
+  color: rgb(31, 26, 26);
+}
+
+#submit-btn {
+  margin: 0 auto;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(161, 129, 129, 0.5);
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: aliceblue;
+}
+
+#submit-btn:hover {
+  transform: scale(0.8);
+  background-image: linear-gradient(
+    to right,
+    rgb(52, 102, 24),
+    rgb(150, 51, 51)
+  );
+}
+
+#submit-btn:active {
+  background-image: linear-gradient(
+    to right,
+    rgb(231, 240, 226),
+    rgb(243, 223, 223)
+  );
+}
+
+#logs {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#logs h2 {
+  color: white;
+}
+
+#task {
+  margin: 15px auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: max-content;
+
+  background-color: rgb(22, 26, 25);
+  transition: all 0.4s;
+}
+
+#task:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(
+    to right,
+    rgb(52, 102, 24),
+    rgb(150, 51, 51)
+  );
+}
+
+#task > * {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#edit,
+#delete,
+#done,
+#undone {
+  color: rgb(101, 111, 194);
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#edit:active,
+#delete:active,
+#done:active {
+  color: rgb(210, 207, 238);
+  transition: all 0.2s;
+}
+
+#main-task {
+  outline: none;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  min-height: 50px;
+  min-width: max-content;
+}
+
+#main-task:not(:read-only) {
+  color: gray;
+}
+
+.done-text {
+  /* text-decoration: line-through; */
+  animation: done 0.5s forwards;
+}
+
+@keyframes done {
+  to {
+    text-decoration: line-through;
+  }
+}
+
+#report {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: white;
+}

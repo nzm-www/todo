@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="head-container">
+        <h1>To_Do</h1>
+        <form id="form">
+          <input type="text" id="task-box" placeholder="A,B,C,#,5,3,?,/" />
+
+          <input type="submit" value="Submit" id="submit-btn" />
+        </form>
+      </div>
+    </header>
+
+    <div id="report">
+      <p class="undone"></p>
+      <p class="done"></p>
+    </div>
+
+    <div id="logs">
+      <div id="task-list"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
